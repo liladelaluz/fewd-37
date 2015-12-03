@@ -128,14 +128,23 @@
 
         // Your code for like goes here
 
-        var commentBox = newCommentBody;
         function comment(event) {
+        var textObject = document.querySelector("textarea")
+        var textComment= textObject.value;
         event.preventDefault();
-        var comment = commentBox.value;
-        console.log(comment);
-     
+
+        var newCommentsDiv = document.createElement("div");
+        newCommentsDiv.textContent = textComment;
+
+        var commentCollector = document.querySelector("#comments")
+        newCommentsDiv.classList.add ("comment")
+        commentCollector.appendChild(newCommentsDiv);
+        textObject.setAttribute = textarea;
+
+
 
         // Your code for comments goes here
+
       }
     </script>
 
