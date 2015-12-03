@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>week4</title>
+      <style media="screen">
+         .container {
+            width: 250px;
+         }
+         input, select {
+            float: right;
+         }
+         .form-row {
+            margin-top: 10px;
+         }
+         .checkbox {
+            float: left;
+         }
+         .save-btn {
+            float: left;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <form method="post">
+            <div class="form-row">
+               <label>
+                  Name:<input type="text" tabindex="1">
+               </label>
+            </div>
+            <div class="form-row">
+               <label>
+                  Email:<input type="email" tabindex="2">
+               </label>
+            </div>
+            <div class="form-row">
+               <label>
+                  Phone:<input type="text" tabindex="3">
+               </label>
+            </div>
+            <div class="form-row">
+               <label>
+                  Job:
+                  <select tabindex="4">
+                     <option disabled selected value="">Select one...</option>
+                     <option value="designer">Designer</option>
+                     <option value="engineer">Engineer</option>
+                     <option value="other">Other</option>
+                  </select>
+               </label>
+            </div>
+            <div class="form-row">
+               <label>
+                  <input type="checkbox" class="checkbox">&nbsp;Agree to terms
+               </label>
+            </div>
+            <div class="form-row">
+               <input type="button" value="Save" class="save-btn">
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

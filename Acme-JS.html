@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ACME Corp</title>
+    <link rel="stylesheet" href="acme.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+
+<script>
+var body = document.querySelector("body");
+var header = document.createElement("header");
+body.appendChild(header);
+
+/*
+var img = document.querySelector("img");
+img.createElement(src = "acme-corp.jpg");
+haeder.appendChild(img);
+*/
+
+var logoImage = document.createElement("img");
+//this is not working as a class in CSS: logoImage.setAttribute ("class", "logoImage");
+logoImage.setAttribute ("src", "acme-corp.jpg");
+logoImage.setAttribute ("width", 200);
+header.appendChild(logoImage);
+
+// Create the nav
+var nav = document.createElement("nav");
+header.appendChild(nav);
+
+// Create products link
+var a = document.createElement("a");
+a.setAttribute ("class", "products");
+a.textContent = "Products";
+nav.appendChild(a);
+
+// Create the sign up button
+var button = document.createElement("button");
+button.setAttribute ("class", "button");
+button.textContent = "Sign up";
+nav.appendChild(button);
+
+// Create the main
+var main = document.createElement("main");
+body.appendChild(main);
+
+// Create section
+var section = document.createElement("section");
+body.appendChild(section);
+
+// Create header
+var h1 = document.createElement("h1");
+h1.textContent = "Welcome to ACME Corp!"
+section.appendChild(h1);
+
+
+// Create paragraph
+
+var p = document.createElement("p");
+p.setAttribute("class", "p");
+p.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+section.appendChild(p);
+
+var pTwo = document.createElement("p");
+pTwo.setAttribute("class", "pTwo");
+pTwo.textContent = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+section.appendChild(pTwo);
+
+
+// Create footer
+var footer = document.createElement("footer");
+footer.textContent = "Copyright, 2015";
+body.appendChild(footer);
+
+
+
+
+
+
+</script>
+
+  </body>
+</html>
