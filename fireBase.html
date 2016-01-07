@@ -1,0 +1,29 @@
+
+akahangman [8:33 PM]
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title></title>
+   <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+
+ </head>
+ <body>
+
+ </body>
+ <script>
+ var firebase = new Firebase("https://blinding-inferno-7422.firebaseio.com");
+
+firebase.push({
+  username: "your-name",
+  messgeBody: "say something";
+})
+
+Firebase.on("child_added", function (snapshot){
+  var data = snapshot.val();
+});
+console.log(data);
+
+ </script>
+</html>
+Firebase App Dashboard
