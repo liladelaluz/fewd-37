@@ -46,7 +46,7 @@ function resultsReceived(results) {
      var title = results["Search"][i]["Title"];
 
      var li2 = document.createElement("li2");
-    li2.textContent = results.Search[i]["Year"];
+      li2.textContent = results.Search[i]["Year"];
 
      var Poster = results["Search"][i]["Poster"];
      image.setAttribute ("src", Poster);
