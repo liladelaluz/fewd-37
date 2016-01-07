@@ -1,0 +1,40 @@
+
+.fixture {
+  height: 470px;
+  width: 200px;
+  position fixed;
+  background-color: rgb(230, 196, 67);
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.stopLight{
+  height: 100px;
+  width: 100px;
+  border: 3px, black;
+  border-radius: 100px;
+  background-color: red;
+  margin: auto;
+  position: relative;
+}
+
+.yieldLight{
+  height: 100px;
+  width: 100px;
+  border: 3px, black;
+  border-radius: 100px;
+  background-color: orange;
+  margin: auto;
+  position: relative;
+}
+
+.goLight{
+  height: 100px;
+  width: 100px;
+  border: 3px, black;
+  border-radius: 100px;
+  background-color: green;
+  margin: auto;
+  position: relative;
+}
