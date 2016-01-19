@@ -1,0 +1,65 @@
+body {
+  background-color: red;
+  height: 100%;
+}
+
+h2 {
+  color: rgba(15, 193, 242, 100);
+  text-align:center;
+  margin-top: 70px;
+  font-family:sans-serif;
+}
+
+button {
+  width: 20vw;
+  height: 25vh;
+  margin: 0 auto;
+  font-family: serif;
+  color: blue;
+  font-size: 18px;
+  background-color: rgb(121, 242, 80);;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+
+
+}
+
+.container {
+  background-color: purple;
+  width: 90%;
+  height: 90vh;
+  position: relative;
+
+  /*text-align: left;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blueBackground {
+  background-color: blue;
+
+}
+.popOut {
+  display: none;
+  width: 200px;
+  height: 400px;
+  background-color: orange;
+}
+
+.visable{
+  display: block;
+  background-color: green;
+}
+
+/* the * symbol here commands all the children of .popOut to be included*/
+.popOut form * {
+  display: block;
+}
+.submitFaceBookButton {
+  float: right;
+}
+/*.greenContainer {}*/
