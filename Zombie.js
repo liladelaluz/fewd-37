@@ -23,6 +23,7 @@ function generateQuote(event) {
       Q = JSON.parse(Q);
     } else {
       // something here
+      // Q = JSON.stringify(Q);
 
     }
     console.log(typeof Q);
@@ -36,17 +37,19 @@ function generateQuote(event) {
   localStorageQuote = localStorage.getItem("unseenQuotes");
   localStorageQuote = JSON.parse(localStorageQuote);
   console.log("**before randome num generation", localStorageQuote);
+
   var randomNum = getRandom(localStorageQuote);
   var quote = localStorageQuote[randomNum];
-  console.log(randomNum, quote);
+  // console.log(randomNum, quote);
   var p = document.createElement("p");
   p.textContent = quote;
   // this bucket called "randomQuote" will hold the result of the search from querySelector
   var quoteDiv = document.querySelector("#randomQuote")
   quoteDiv.appendChild(p)
 
-  localStorageQuote.splice(randomNum, 1);
+  localStorageQuote.slice(randomNum, 1);
   localStorageQuote = JSON.stringify(localStorageQuote);
+  console.log(localStorageQuote)
   localStorage.setItem("unseenQuotes", localStorageQuote);
 }
 

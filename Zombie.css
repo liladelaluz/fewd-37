@@ -3,11 +3,17 @@ body {
   height: 100%;
 }
 
+h1  {
+  color: rgba(15, 193, 242, 1);
+  font-family: sans-serif;
+  text-align: center;
+
+}
 h2 {
-  color: rgba(15, 193, 242, 100);
+  color: rgba(15, 193, 242, 1);
   text-align:center;
   margin-top: 70px;
-  font-family:sans-serif;
+  font-family: Uni Sans Heavy.otf;
 }
 
 button {
@@ -24,6 +30,7 @@ button {
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
+  border-radius: 7px;
 
 
 }
@@ -32,6 +39,7 @@ button {
   background-color: purple;
   width: 90%;
   height: 90vh;
+  border-radius: 10px;
   position: relative;
 
   /*text-align: left;*/
@@ -41,8 +49,8 @@ button {
 
 .blueBackground {
   background-color: blue;
-
 }
+
 .popOut {
   display: none;
   width: 200px;
@@ -61,5 +69,12 @@ button {
 }
 .submitFaceBookButton {
   float: right;
+}
+
+#randomQuote {
+  text-align: center;
+  font-family: cursive;
+  font-size: 36px;
+  position: relative;
 }
 /*.greenContainer {}*/
