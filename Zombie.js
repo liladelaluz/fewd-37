@@ -1,9 +1,17 @@
 var Q = [
   "You are made of stardust, your greatest contribution is to shine",
-  "Create, create, create, when you are done, create",
-  "This is a placeholder",
-  "Here is another one",
-  "Crickets"
+  "Create, create, create, when you are done, create some more",
+  "Anger is most toxic to the beholder. Replace the story of why you are so angry, with a new story of why you should let go of your anger for a more resiliant you.",
+  "Living life with fluidity and movement alows for easier transitions. Today choose the path with the greatest ease.",
+  "Today, be the observer.",
+  "Practice active listening.",
+  "You are The Vehicle of Change. Naviage with care and self preservation to the destinations you desire.",
+  "If you love and respect yourself first, you can easily love and respect others. Treat yourself to an awesome gift today! Go for a walk, eat chocolate or meditate. These are all great gifts.",
+  "Engage in uplifting activities today. Think about what will lift your spirits even higher today and do that. Set a goal that attainable.",
+  "Checkin with your body today. Dive in deeper to listening to what it desires. Do you require more rest? Do you crave ice cream, but what you really need is calcium? Find the root of your body's needs and fill it.",
+  "Take 10! Take 10 minutes to close your eyes, focus on your breath and with each breath try to breath deeper. You can do this anywhere, so get it done, my friend!",
+  "Activate Super Powers in the form of__________! What super hero(ine) would you today? Make one gesture that reflects your powers.",
+
 ];
 
 
