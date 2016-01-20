@@ -81,7 +81,7 @@ if (!localStorage.getItem('quotes')) {
 //
 */
 
-var body = document.querySelector("body");
+var body = document.querySelector(".wrapper");
 var images = [
     "zombieimages/image_1.jpg",
     "zombieimages/image_2.jpg",
@@ -182,15 +182,30 @@ function randomQuote() {
 // container.appendChild(p);
 //
 
+var backgroundCounter = 0;
+var backgroundMax = 13;
+
 function setBackgroundImage () {
+  if (backgroundCounter >= backgroundMax) {
+    clearInterval(interval);
+    body.classList.remove("hidden");
+    showQuote();
+    return;
+  }
+
   var randomNumber = Math.floor(Math.random() * (images.length-1));
   document.body.style.backgroundImage = "url('" + images[randomNumber] + "')";
+  // images.splice(randomNumber, 1);
+  // console.log(splice);
   // for (var i = 0; i < randomImage.length; i++) {
   //   randomImage[i]
   // }
-  // randomImage.splice(randomNumber, 1);
+
+  backgroundCounter++;
+
 }
-setInterval(setBackgroundImage, 500);
+var interval = setInterval(setBackgroundImage, 500);
+
 // if (background-Image.length === 0){
 //   background-Image = randomImage
 //

@@ -65,6 +65,10 @@ button {
   background-color: green;
 }
 
+.hidden {
+  display: none;
+}
+
 /* the * symbol here commands all the children of .popOut to be included*/
 .popOut form * {
   display: block;
