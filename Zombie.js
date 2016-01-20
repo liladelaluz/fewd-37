@@ -80,69 +80,70 @@ if (!localStorage.getItem('quotes')) {
   }
 //
 */
+
 var body = document.querySelector("body");
-  body {
-    background-Image: url(".zombie images.image_1.jpg");
-    background-Image: url(".zombie images.image_2.jpg");
-    background-Image: url(".zombie images.image_3.jpg");
-    background-Image: url(".zombie images.image_4.jpg");
-    background-Image: url(".zombie images.image_5.jpg");
-    background-Image: url(".zombie images.image_6.jpg");
-    background-Image: url(".zombie images.image_7.jpg");
-    background-Image: url(".zombie images.image_8.jpg");
-    background-Image: url(".zombie images.image_9.jpg");
-    background-Image: url(".zombie images.image_10.jpg");
-    background-Image: url(".zombie images.image_11.jpg");
-    background-Image: url(".zombie images.image_12.jpg");
-    background-Image: url(".zombie images.image_13.jpg");
-    background-Image: url(".zombie images.image_14.jpg");
-    background-Image: url(".zombie images.image_15.jpg");
-    background-Image: url(".zombie images.image_16.jpg");
-    background-Image: url(".zombie images.image_17.jpg");
-    background-Image: url(".zombie images.image_18.jpg");
-    background-Image: url(".zombie images.image_19.jpg");
-    background-Image: url(".zombie images.image_20.jpg");
-    background-Image: url(".zombie images.image_21.jpg");
-    background-Image: url(".zombie images.image_22.jpg");
-    background-Image: url(".zombie images.image_23.jpg");
-    background-Image: url(".zombie images.image_24.jpg");
-    background-Image: url(".zombie images.image_25.jpg");
-    background-Image: url(".zombie images.image_26.jpg");
-    background-Image: url(".zombie images.image_27.jpg");
-    background-Image: url(".zombie images.image_28.jpg");
-    background-Image: url(".zombie images.image_29.jpg");
-    background-Image: url(".zombie images.image_30.jpg");
-    background-Image: url(".zombie images.image_31.jpg");
-    background-Image: url(".zombie images.image_32.jpg");
-    background-Image: url(".zombie images.image_33.jpg");
-    background-Image: url(".zombie images.image_34.jpg");
-    background-Image: url(".zombie images.image_35.jpg");
-    background-Image: url(".zombie images.image_36.jpg");
-    background-Image: url(".zombie images.image_37.jpg");
-    background-Image: url(".zombie images.image_38.jpg");
-    background-Image: url(".zombie images.image_39.jpg");
-    background-Image: url(".zombie images.image_40.jpg");
-    background-Image: url(".zombie images.image_41.jpg");
-    background-Image: url(".zombie images.image_42.jpg");
-    background-Image: url(".zombie images.image_43.jpg");
-    background-Image: url(".zombie images.image_44.jpg");
-    background-Image: url(".zombie images.image_45.jpg");
-    background-Image: url(".zombie images.image_46.jpg");
-    background-Image: url(".zombie images.image_47.jpg");
-    background-Image: url(".zombie images.image_48.jpg");
-    background-Image: url(".zombie images.image_49.jpg");
-    background-Image: url(".zombie images.image_50.jpg");
-    background-Image: url(".zombie images.image_51.jpg");
-    background-Image: url(".zombie images.image_52.jpg");
-    background-Image: url(".zombie images.image_53.jpg");
-    background-Image: url(".zombie images.image_54.jpg");
-    background-Image: url(".zombie images.image_55.jpg");
-    background-Image: url(".zombie images.image_56.jpg");
-    background-Image: url(".zombie images.image_57.jpg");
-    background-Image: url(".zombie images.image_58.jpg");
-    background-Image: url(".zombie images.image_59.jpg");
-    background-Image: url(".zombie images.image_60.jpg");
-  }
+var images = [
+    "zombieimages/image_1.jpg",
+    "zombieimages/image_2.jpg",
+    "zombieimages/image_3.jpg",
+    "zombieimages/image_4.jpg",
+    "zombieimages/image_5.jpg",
+    "zombieimages/image_6.jpg",
+    "zombieimages/image_7.jpg",
+    "zombieimages/image_8.jpg",
+    "zombieimages/image_9.jpg",
+    "zombieimages/image_10.jpg",
+    "zombieimages/image_11.jpg",
+    "zombieimages/image_12.jpg",
+    "zombieimages/image_13.jpg",
+    "zombieimages/image_14.jpg",
+    "zombieimages/image_15.jpg",
+    "zombieimages/image_16.jpg",
+    "zombieimages/image_17.jpg",
+    "zombieimages/image_18.jpg",
+    "zombieimages/image_19.jpg",
+    "zombieimages/image_20.jpg",
+    "zombieimages/image_21.jpg",
+    "zombieimages/image_22.jpg",
+    "zombieimages/image_23.jpg",
+    "zombieimages/image_24.jpg",
+    "zombieimages/image_25.jpg",
+    "zombieimages/image_26.jpg",
+    "zombieimages/image_27.jpg",
+    "zombieimages/image_28.jpg",
+    "zombieimages/image_29.jpg",
+    "zombieimages/image_30.jpg",
+    "zombieimages/image_31.jpg",
+    "zombieimages/image_32.jpg",
+    "zombieimages/image_33.jpg",
+    "zombieimages/image_34.jpg",
+    "zombieimages/image_35.jpg",
+    "zombieimages/image_36.jpg",
+    "zombieimages/image_37.jpg",
+    "zombieimages/image_38.jpg",
+    "zombieimages/image_39.jpg",
+    "zombieimages/image_40.jpg",
+    "zombieimages/image_41.jpg",
+    "zombieimages/image_42.jpg",
+    "zombieimages/image_43.jpg",
+    "zombieimages/image_44.jpg",
+    "zombieimages/image_45.jpg",
+    "zombieimages/image_46.jpg",
+    "zombieimages/image_47.jpg",
+    "zombieimages/image_48.jpg",
+    "zombieimages/image_49.jpg",
+    "zombieimages/image_50.jpg",
+    "zombieimages/image_51.jpg",
+    "zombieimages/image_52.jpg",
+    "zombieimages/image_53.jpg",
+    "zombieimages/image_54.jpg",
+    "zombieimages/image_55.jpg",
+    "zombieimages/image_56.jpg",
+    "zombieimages/image_57.jpg",
+    "zombieimages/image_58.jpg",
+    "zombieimages/image_59.jpg",
+    "zombieimages/image_60.jpg"
+]
 
 var container = document.createElement("section");
 container.setAttribute("class", "container");
@@ -170,27 +171,32 @@ function randomQuote() {
   // take the random number and based on that index, assign it to a p tag and append p tag to the container
 }
 
+//
+// var unseenQuotes = document.createElement("p").setAttribute("class", "unSeenQuotes");
+//
+// localStorage.setItem("unseenQuotes");
+// localStorageQuote = localStorage.getItem("unseenQuotes", "p");
+// // attaching quote to container
+// var p = document.createElement("p");
+// p.textContent = unSeenQuotes;
+// container.appendChild(p);
+//
 
-var unseenQuotes = document.createElement("p").setAttribute("class", "unSeenQuotes");
-
-localStorage.setItem("unseenQuotes");
-localStorageQuote = localStorage.getItem("unseenQuotes", "p");
-// attaching quote to container
-var p = document.createElement("p");
-p.textContent = unSeenQuotes;
-container.appendChild(p);
-
-
-var randomImage = Math.floor(Math.random() * (randomImage.length-1));
-
-for (var i = 0; i < randomImage.length; i++) {
-  randomImage[i]
-
+function setBackgroundImage () {
+  var randomNumber = Math.floor(Math.random() * (images.length-1));
+  document.body.style.backgroundImage = "url('" + images[randomNumber] + "')";
+  // for (var i = 0; i < randomImage.length; i++) {
+  //   randomImage[i]
+  // }
+  // randomImage.splice(randomNumber, 1);
 }
-if (background-Image.length === 0){
-  background-Image = I
-  // reset backround-Image
-}
+setInterval(setBackgroundImage, 500);
+// if (background-Image.length === 0){
+//   background-Image = randomImage
+//
+//   var
+//   // reset backround-Image
+// }
 // get a random quote
   // var i = 0
   // Q[i]i++ Math.random() Q.length
