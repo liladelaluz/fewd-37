@@ -89,7 +89,10 @@ if (!localStorage.getItem('quotes')) {
 //
 */
 
+// var skullGif = getItem.setInterval(setSkullGif, 7);
+
 var body = document.querySelector(".wrapper");
+
 var images = [
     "zombieimages/image_1.jpg",
     "zombieimages/image_2.jpg",
@@ -153,16 +156,22 @@ var images = [
     "zombieimages/image_60.jpg"
 ]
 
-var container = document.createElement("section");
-container.setAttribute("class", "container");
-body.appendChild(container);
+// var container = document.createElement("section");
+// container.setAttribute("class", "container");
+// body.appendChild(container);
 
 var button = document.querySelector("button");
-button.addEventListener("click", randomQuote);
-container.appendChild(button);
+button.addEventListener("click", function () {
+  p.classList.add('hidden');
+  button.classList.add('hidden');
+  document.querySelector('header').classList.add('hidden');
+  backgroundCounter = 0;
+  interval = setInterval(setBackgroundImage, 300);
+});
+body.appendChild(button);
 
 var p = document.createElement("p");
-container.appendChild(p);
+body.appendChild(p);
 
 function randomQuote() {
   var quotes = JSON.parse(localStorage.getItem('quotes'));
@@ -192,12 +201,14 @@ function randomQuote() {
 
 var backgroundCounter = 0;
 var backgroundMax = 13;
-
+var interval;
 function setBackgroundImage () {
   if (backgroundCounter >= backgroundMax) {
     clearInterval(interval);
-    body.classList.remove("hidden");
-    showQuote();
+    randomQuote();
+    p.classList.remove('hidden');
+    button.classList.remove('hidden');
+    // showQuote();
     return;
   }
 
@@ -212,7 +223,11 @@ function setBackgroundImage () {
   backgroundCounter++;
 
 }
-var interval = setInterval(setBackgroundImage, 500);
+//var interval = setInterval(setBackgroundImage, 300);
+setTimeout(function () {
+  document.querySelector('#skullGif').classList.toggle('hidden');
+  body.classList.toggle('hidden');
+}, 3000)
 
 // if (background-Image.length === 0){
 //   background-Image = randomImage
