@@ -1,12 +1,13 @@
 body {
-  background-color: rgb(225, 225, 225);
+  background-color: rgba(178 , 160, 189, 1);
   height: 100%;
+  /*font-family: 'Niconne', cursive, 600px;*/
 }
 
 .plainBackgroundImage {
     width: 100%;
     height: 100%;
-    background-color: light pink;
+    background-color: red;
 }
 
 #skullGif {
@@ -21,30 +22,38 @@ h1  {
 
 }
 h2 {
-  color: rgba(15, 193, 242, 1);
+  color: rgba(111, 45, 150, 1);
   text-align:center;
   margin-top: 70px;
   font-family: Uni Sans Heavy.otf;
 }
 
 button {
-  width: 20vw;
-  height: 25vh;
-  margin-left: 20px;
-  margin-bottom: 5px;
-  font-family: serif;
-  color: blue;
+  width: inherit;
+  height: 43px;
+  margin-top: 55px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  color: rgba(10, 28, 162, 1);
   font-size: 18px;
-  background-color: rgb(121, 242, 80);;
+  background-color: rgba(221, 131, 182, 1);
   text-align: center;
   display: block;
-  /*position: absolute;*/
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  left: 50%;
-  border-radius: 7px;
+  position: relative;
+  /*top: 50%;*/
+  /*transform: translateY(-50%) translateX(-50%);*/
+  /*left: 50%;*/
+  border-radius: 25px;
 }
-
+.Buttonfront {
+ width: auto;
+border:1px solid gray;
+border-radius:7%;
+float:right;
+font-size:0.875;
+ }
 /*.container {
   background-color: purple;
   width: 90%;
@@ -53,9 +62,10 @@ button {
   position: relative;
 
   /*text-align: left;*/
-  margin-left: auto;
+  /*margin-left: auto;
   margin-right: auto;
 }*/
+
 
 .setBackgroundImage {
   background-size: 100%;
@@ -81,15 +91,16 @@ button {
 /* the * symbol here commands all the children of .popOut to be included*/
 /*.popOut form * {*/
   /*display: block;*/
-}
-.submitFaceBookButton {
-  float: right;
-}
 
-#randomQuote {
+/*.submitFaceBookButton {
+  float: right;
+}*/
+
+ .quote {
   text-align: center;
-  font-family: cursive;
-  font-size: 36px;
+  font-family: 'Niconne', cursive;
+  font-size:  -webkit-xxx-large;
   position: relative;
+
 }
 /*.greenContainer {}*/

@@ -7,9 +7,9 @@ var Q = [
   "Practice active listening.",
   "You are The Vehicle of Change. Naviage with care and self preservation to the destinations you desire.",
   "If you love and respect yourself first, you can easily love and respect others. Treat yourself to an awesome gift today! Go for a walk, eat chocolate or meditate. These are all great gifts.",
-  "Engage in uplifting activities today. Think about what will lift your spirits even higher today and do that. Set a goal that attainable.",
+  "Engage in uplifting activities today. Think about what will lift your spirits even higher today and do that. Set a goal that is attainable.",
   "Checkin with your body today. Dive in deeper to listening to what it desires. Do you require more rest? Do you crave ice cream, but what you really need is calcium? Find the root of your body's needs and fill it.",
-  "Take 10! Take 10 minutes to close your eyes, focus on your breath and with each breath try to breath deeper. You can do this anywhere, so get it done, my friend!",
+  "Take 10! Take 10 minutes to close your eyes, focus on your breath and with each breath try to breath deeper. You can do this anywhere, so get it done, my friend! You owe it to yourself to be free of poisonous emotions.",
   "Activate Super Powers in the form of__________! What super hero(ine) would you today? Make one gesture that reflects your powers.",
 
 ];
@@ -20,76 +20,7 @@ if (!localStorage.getItem('quotes')) {
 }
 
 
-/*function generateQuote(event) {
-  console.log("clicked!")
 
-
-  //JSON.parse converts a string into an array
-  console.log(typeof localStorageQuote);
-  localStorageQuote = JSON.parse(localStorageQuote);
-
-  // if local storage variable is null or equal to zero... JSON.parse converts a string into an array
-  if (localStorageQuote == null || localStorageQuote.length == 0) {
-    // if all quotes have been seen, reset local storage and give quotes again
-    localStorage.clear();
-    console.log("quotes Reset");
-    // Write a conditional if/else to test if Q is a string
-    // if it is a string, you need to put it as an object (use JSON parse)
-    if (typeof Q === "string") {
-      Q = JSON.parse(Q);
-    } else {
-      // something here
-      // Q = JSON.stringify(Q);
-
-    }
-    console.log(typeof Q);
-    // Stingify the array
-    Q = JSON.stringify(Q);
-    console.log(typeof Q);
-    console.log("Q is:", Q);
-    localStorage.setItem("unseenQuotes", Q);
-  }
-
-  localStorageQuote = JSON.parse(localStorageQuote);
-  console.log("**before randome num generation", localStorageQuote);
-
-  // console.log(randomNum, quote);
-
-  // this bucket called "randomQuote" will hold the result of the search from querySelector
-  var quoteDiv = document.querySelector("#randomQuote")
-  quoteDiv.appendChild(p)
-
-  localStorageQuote.slice(randomNum, 1);
-  //localStorageQuote = JSON.stringify(localStorageQuote); //turns array into "["strings"\n,"so many strings"]"
-  console.log(localStorageQuote)
-  localStorage.setItem("unseenQuotes", localStorageQuote);
-}
-
-
-
-
-
-// generate a random number and pick that quote at that number in the array
-// function promptPopOut() {
-  // var popOut=document.querySelector(".popOut");
-  // popOut.classList.add(".visable");
-
-
-// set local storage Quote
-// array of unseen quotes
-
-
-  function getRandom(quotesArray) {
-    var randomNumber = Math.random();
-    var index = randomNumber * quotesArray.length;
-
-    index = parseInt(index);
-    return index;
-  }
-//
-*/
-
-// var skullGif = getItem.setInterval(setSkullGif, 7);
 
 var body = document.querySelector(".wrapper");
 
@@ -166,11 +97,12 @@ button.addEventListener("click", function () {
   button.classList.add('hidden');
   document.querySelector('header').classList.add('hidden');
   backgroundCounter = 0;
-  interval = setInterval(setBackgroundImage, 300);
+  interval = setInterval(setBackgroundImage, 100);
 });
 body.appendChild(button);
 
 var p = document.createElement("p");
+p.setAttribute("class", "quote");
 body.appendChild(p);
 
 function randomQuote() {
@@ -227,7 +159,7 @@ function setBackgroundImage () {
 setTimeout(function () {
   document.querySelector('#skullGif').classList.toggle('hidden');
   body.classList.toggle('hidden');
-}, 3000)
+}, 700)
 
 // if (background-Image.length === 0){
 //   background-Image = randomImage
