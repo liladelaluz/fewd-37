@@ -5,9 +5,9 @@ var goButton = document.querySelector(".goButton");
 
 
 
-stopButton.addEventListener("click", fstopButton);
-slowButton.addEventListener("click", fslowButton);
-goButton.addEventListener("click", fgoButton);
+stopButton.addEventListener("click", stopButton);
+slowButton.addEventListener("click", slowButton);
+goButton.addEventListener("click", goButton);
 
 
 var stopLight = document.querySelector("#stopLight");

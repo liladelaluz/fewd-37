@@ -1,0 +1,13 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+
+  $.get("http://omdapi.com/?s=matrix", resultsReceived);
+    function resultsReceived(results){
+      console.log("the data to omdb is:", results);
+
+      for (var i = 0; i < results["Search"].length; i++) {
+        console.log(i, results["Search"][i]["Title"])
+      }
+    }
+
+</script>
+ 

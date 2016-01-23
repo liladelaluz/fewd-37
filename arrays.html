@@ -1,0 +1,66 @@
+
+<!-- saved from url=(0057)http://avandamiri.com/fewd-37/week-6/examples/arrays.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><p>
+  There are <span id="count">0</span> students in the class:
+</p>
+
+<ol>
+</ol>
+
+<script>
+var students = [
+  "Allison",
+  "Amanda",
+  "Angela",
+  "Bora",
+  "Brad",
+  "Cack",
+  "David",
+  "David",
+  "Denise",
+  "Diana",
+  "Emily",
+  "Eric",
+  "Fernando",
+  "Gina",
+  "Guillermo",
+  "Jake",
+  "JC",
+  "Jessica",
+  "Kathryn",
+  "Kuulei",
+  "Laci",
+  "Lila",
+  "Lindsey",
+  "Madison",
+  "Megan",
+  "My",
+  "Nicholas",
+  "Oleg",
+  "Pegah",
+  "Ryan",
+  "Serge",
+  "Yiqian"
+];
+</script>
+
+<script>
+// Your code goes here:
+// 1. Add each student to the main <ol>
+for (var i = 0; i < students.length; i++) {
+  var ol = document.querySelector("ol");
+  var li = document.querySelector("li");
+  document.createElement("li");
+  li.textContent = students[i];
+  ol.appendChild(li);
+
+}
+
+
+// 2. Change the 0 to reflect the number of students in the array
+var span = document.querySelector("#count");
+span.textContent = students.length;
+
+
+</script>
+</body></html>
