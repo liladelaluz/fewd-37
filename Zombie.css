@@ -3,47 +3,29 @@ body {
   height: 100%;
   margin-left: 1vh;
   margin-right: 1vh;
-
-  /*font-family: 'Niconne', cursive, 600px;*/
+  position: absolute;
 }
-
-#skullWallPaper {
-    z-index: 1;
-    width: 100%;
-    height: 10%;
-}
-
-#skullGif {
-    width: 90%;
-    height: 90%;
-}
-
-#skullImage {
-    width: 40px;
-    height: 40px;
-}
-
-#zombieEyes {
-    margin-left: 60vh;
-    position: absolute;
-}
-/*#zombieGuts {
-    width: 500%;
-    height: 500%;
-}*/
 
 h1  {
-  z-index: 2;
-  color: rgba(99, 47, 130, 1);
-  font-family: sans-serif;
+  font-size: 88px;
+  color: rgba(44, 28, 123, 1);
   text-align: center;
-
+  font-family: 'UnifrakturMaguntia', cursive;
 }
+
 h2 {
-  color: rgba(111, 45, 150, 1);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 32px;
+  color: rgba(92, 35, 125, 1);
   text-align:center;
   margin-top: 70px;
-  font-family: Uni Sans Heavy.otf;
+  font-family: 'Sail', cursive;
+}
+
+#dancingMuerto {
+  margin-left: 95vh;
+  position: relative;
 }
 
 button {
@@ -60,7 +42,7 @@ button {
   text-align: center;
   display: block;
   position: relative;
-  
+
   /*top: 50%;*/
   /*transform: translateY(-50%) translateX(-50%);*/
   /*left: 50%;*/
@@ -86,17 +68,27 @@ font-size:0.875;
 }*/
 
 
+#skullWallPaper {
+  /*z-index: 1;*/
+  width: 100%;
+  height: 10%;
+}
+
+#skullGif {
+  width: 90%;
+  height: 90%;
+}
+
+#skullImage {
+  width: 40px;
+  height: 40px;
+}
+
 .setBackgroundImage {
   background-size: 100%;
 }
 
 
-/*.popOut {
-  display: none;
-  width: 200px;
-  height: 400px;
-  background-color: orange;
-}*/
 
 .visable{
   display: block;
@@ -105,21 +97,13 @@ font-size:0.875;
 
 .hidden {
   display: none;
-
 }
 
-/* the * symbol here commands all the children of .popOut to be included*/
-/*.popOut form * {*/
-  /*display: block;*/
-
-/*.submitFaceBookButton {
-  float: right;
-}*/
 
  .quote {
-   color: rgba(155, 51, 137, 1);
+   color: rgba(92, 35, 125, 1);
   text-align: center;
-  font-family: 'Niconne', cursive;
+    font-family: 'Sail', cursive;
   font-size:  -webkit-xxx-large;
   position: relative;
   margin-left: 40vh;

@@ -1,14 +1,14 @@
 var Q = [
-  "You are made of stardust, your greatest contribution is to shine",
-  "Create, create, create, when you are done, create some more",
-  "Anger is most toxic to the beholder. Replace the story of why you are so angry, with a new story of why you should let go of your anger for a more resiliant you.",
+  "You are made of stardust, your greatest contribution is to SHINE!",
+  "Create, create, create, when you are done, create some more...",
+  "Anger is most toxic to the holder. Replace the story of why you are so angry, with a new story of why you should let go of your anger for a more resilient you. You owe it to yourself to be free of poisonous emotions!",
   "Living life with fluidity and movement alows for easier transitions. Today choose the path with the greatest ease.",
-  "Today, be the observer.",
-  "Practice active listening.",
-  "You are The Vehicle of Change. Naviage with care and self preservation to the destinations you desire.",
-  "If you love and respect yourself first, you can easily love and respect others. Treat yourself to an awesome gift today! Go for a walk, eat chocolate or meditate. These are all great gifts.",
+  "Today, be the observer. Keep your eyes present to what is and how it operates in the space that surronds you.",
+  "Practice active listening. Take in what is being said and let it marinate.",
+  "You are The Vehicle of Change. Naviage with care and self preservation to the destinations you desire. Build the world you dream to live in.",
+  "If you love and respect yourself first, you can easily love and respect others. Treat yourself to an awesome gift today, by doing something you.",
   "Engage in uplifting activities today. Think about what will lift your spirits even higher today and do that. Set a goal that is attainable.",
-  "Checkin with your body today. Dive in deeper to listening to what it desires. Do you require more rest? Do you crave ice cream, but what you really need is calcium? Find the root of your body's needs and fill it.",
+  "Checkin with your body today. Dive in deeper to listening to what it desires. Do you require more rest? Do you crave ice cream, but what you really need is calcium? Find the root of your body's needs and fill them.",
   "Take 10! Take 10 minutes to close your eyes, focus on your breath and with each breath try to breath deeper. You can do this anywhere, so get it done, my friend! You owe it to yourself to be free of poisonous emotions.",
   "Activate Super Powers in the form of__________! What super hero(ine) would you like to be today? Make one gesture that reflects your powers.",
 
@@ -182,7 +182,7 @@ function setBackgroundImage () {
 }
 
 setTimeout(function () {
-  document.querySelector('#zombieEyes').classList.toggle('hidden');
+  document.querySelector('#dancingMuerto').classList.toggle('hidden');
   body.classList.toggle('hidden');
 }, 7000)
 //var interval = setInterval(setBackgroundImage, 300);
