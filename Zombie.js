@@ -1,26 +1,24 @@
 var Q = [
-  "You are made of stardust, your greatest contribution is to SHINE!",
+  "You are made of stardust, your greatest contribution to yourself and the world, is to SHINE!",
   "Create, create, create, when you are done, create some more...",
   "Anger is most toxic to the holder. Replace the story of why you are so angry, with a new story of why you should let go of your anger for a more resilient you. You owe it to yourself to be free of poisonous emotions!",
-  "Living life with fluidity and movement alows for easier transitions. Today choose the path with the greatest ease.",
+  "Live life with greater fluidity and more movement. This will allow for, easier transitions. Today choose the path with the greatest ease.",
   "Today, be the observer. Keep your eyes present to what is and how it operates in the space that surronds you.",
   "Practice active listening. Take in what is being said and let it marinate.",
-  "You are The Vehicle of Change. Naviage with care and self preservation to the destinations you desire. Build the world you dream to live in.",
-  "If you love and respect yourself first, you can easily love and respect others. Treat yourself to an awesome gift today, by doing something you.",
+  "You are The Vehicle of Change. Naviage with care and self preservation, to the destinations you desire.",
+  "If you love and respect yourself first, you can easily love and respect others. Treat yourself to an awesome gift today, by doing something for you.",
   "Engage in uplifting activities today. Think about what will lift your spirits even higher today and do that. Set a goal that is attainable.",
   "Checkin with your body today. Dive in deeper to listening to what it desires. Do you require more rest? Do you crave ice cream, but what you really need is calcium? Find the root of your body's needs and fill them.",
-  "Take 10! Take 10 minutes to close your eyes, focus on your breath and with each breath try to breath deeper. You can do this anywhere, so get it done, my friend! You owe it to yourself to be free of poisonous emotions.",
+  "Take 10! Take 10 minutes to close your eyes, focus on your breath and with each breath, try to breath deeper. You can do this anywhere, so get it done, my friend!",
   "Activate Super Powers in the form of__________! What super hero(ine) would you like to be today? Make one gesture that reflects your powers.",
-
+  "Build the world you dream to live in! Complete one call to action. If you desire to build sustainable environments, make a point to buy local today. If you desire to save the condors, donate your time or money. You get the idea... take action.",
+  "Something goes here!",
 ];
 
 
 if (!localStorage.getItem('quotes')) {
   localStorage.setItem('quotes', JSON.stringify(Q));
 }
-
-
-
 
 var body = document.querySelector(".wrapper");
 
@@ -48,68 +46,14 @@ var images = [
        "newImages/image_20.jpg",
        "newImages/image_21.jpg",
        "newImages/image_22.jpg",
-
-
-    // "zombieimages/image_1.jpg",
-    // "zombieimages/image_2.jpg",
-    // "zombieimages/image_3.jpg",
-    // "zombieimages/image_4.jpg",
-    // "zombieimages/image_5.jpg",
-    // "zombieimages/image_6.jpg",
-    // "zombieimages/image_7.jpg",
-    // "zombieimages/image_8.jpg",
-    // "zombieimages/image_9.jpg",
-    // "zombieimages/image_10.jpg",
-    // "zombieimages/image_11.jpg",
-    // "zombieimages/image_12.jpg",
-    // "zombieimages/image_13.jpg",
-    // "zombieimages/image_14.jpg",
-    // "zombieimages/image_15.jpg",
-    // "zombieimages/image_16.jpg",
-    // "zombieimages/image_17.jpg",
-    // "zombieimages/image_18.jpg",
-    // "zombieimages/image_19.jpg",
-    // "zombieimages/image_20.jpg",
-    // "zombieimages/image_21.jpg",
-    // "zombieimages/image_22.jpg",
-    // "zombieimages/image_23.jpg",
-    // "zombieimages/image_24.jpg",
-    // "zombieimages/image_25.jpg",
-    // "zombieimages/image_26.jpg",
-    // "zombieimages/image_27.jpg",
-    // "zombieimages/image_28.jpg",
-    // "zombieimages/image_29.jpg",
-    // "zombieimages/image_30.jpg",
-    // "zombieimages/image_31.jpg",
-    // "zombieimages/image_32.jpg",
-    // "zombieimages/image_33.jpg",
-    // "zombieimages/image_34.jpg",
-    // "zombieimages/image_35.jpg",
-    // "zombieimages/image_36.jpg",
-    // "zombieimages/image_37.jpg",
-    // "zombieimages/image_38.jpg",
-    // "zombieimages/image_39.jpg",
-    // "zombieimages/image_40.jpg",
-    // "zombieimages/image_41.jpg",
-    // "zombieimages/image_42.jpg",
-    // "zombieimages/image_43.jpg",
-    // "zombieimages/image_44.jpg",
-    // "zombieimages/image_45.jpg",
-    // "zombieimages/image_46.jpg",
-    // "zombieimages/image_47.jpg",
-    // "zombieimages/image_48.jpg",
-    // "zombieimages/image_49.jpg",
-    // "zombieimages/image_50.jpg",
-    // "zombieimages/image_51.jpg",
-    // "zombieimages/image_52.jpg",
-    // "zombieimages/image_53.jpg",
-    // "zombieimages/image_54.jpg",
-    // "zombieimages/image_55.jpg",
-    // "zombieimages/image_56.jpg",
-    // "zombieimages/image_57.jpg",
-    // "zombieimages/image_58.jpg",
-    // "zombieimages/image_59.jpg",
-    // "zombieimages/image_60.jpg"
+       "newImages/image_23.jpg",
+       "newImages/image_24.jpg",
+       "newImages/image_25.jpg",
+       "newImages/image_26.jpg",
+       "newImages/image_27.jpg",
+       "newImages/image_28.jpg",
+       "newImages/image_29.jpg",
+       "newImages/image_30.jpg",
 ]
 
 // var container = document.createElement("section");
@@ -121,6 +65,8 @@ button.addEventListener("click", function () {
   p.classList.add('hidden');
   button.classList.add('hidden');
   document.querySelector('header').classList.add('hidden');
+  var footer = document.querySelector("footer");
+  footer.classList.add('hidden');
   backgroundCounter = 0;
   interval = setInterval(setBackgroundImage, 100);
 });
@@ -135,15 +81,15 @@ function randomQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length-1));
   var quote = quotes[randomNumber];
 
+  // take the random number and based on that index, assign it to a p tag and append p tag to the container
   quotes.splice(randomNumber, 1);
   p.textContent = quote;
   if (quotes.length === 0) {
     quotes = Q;
   }
-  localStorage.setItem('quotes', JSON.stringify(quotes));
 
-  // take the random number and based on that index, assign it to a p tag and append p tag to the container
-}
+  localStorage.setItem('quotes', JSON.stringify(quotes));
+  }
 
 //
 // var unseenQuotes = document.createElement("p").setAttribute("class", "unSeenQuotes");
@@ -169,16 +115,10 @@ function setBackgroundImage () {
     return;
   }
 
+
   var randomNumber = Math.floor(Math.random() * (images.length-1));
   document.body.style.backgroundImage = "url('" + images[randomNumber] + "')";
-  // images.splice(randomNumber, 1);
-  // console.log(splice);
-  // for (var i = 0; i < randomImage.length; i++) {
-  //   randomImage[i]
-  // }
-
   backgroundCounter++;
-
 }
 
 setTimeout(function () {

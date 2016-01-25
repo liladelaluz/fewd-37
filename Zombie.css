@@ -24,8 +24,8 @@ h2 {
 }
 
 #dancingMuerto {
-  margin-left: 95vh;
-  position: relative;
+display: block;
+margin: 0 auto;
 }
 
 button {
@@ -92,7 +92,6 @@ font-size:0.875;
 
 .visable{
   display: block;
-  background-color: green;
 }
 
 .hidden {
