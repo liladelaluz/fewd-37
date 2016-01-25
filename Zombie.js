@@ -1,5 +1,5 @@
 var Q = [
-  "You are made of stardust, your greatest contribution to yourself and the world, is to SHINE!",
+  "You are made of stardust, your greatest contribution to yourself and the world, is to shine!",
   "Create, create, create, when you are done, create some more...",
   "Anger is most toxic to the holder. Replace the story of why you are so angry, with a new story of why you should let go of your anger for a more resilient you. You owe it to yourself to be free of poisonous emotions!",
   "Live life with greater fluidity and more movement. This will allow for, easier transitions. Today choose the path with the greatest ease.",
@@ -70,7 +70,7 @@ button.addEventListener("click", function () {
   backgroundCounter = 0;
   interval = setInterval(setBackgroundImage, 100);
 });
-body.appendChild(button);
+// body.appendChild(button);
 
 var p = document.createElement("p");
 p.setAttribute("class", "quote");
@@ -122,7 +122,7 @@ function setBackgroundImage () {
 }
 
 setTimeout(function () {
-  document.querySelector('#dancingMuerto').classList.toggle('hidden');
+  document.querySelector('.dancingMuerto').classList.toggle('hidden');
   body.classList.toggle('hidden');
 }, 7000)
 //var interval = setInterval(setBackgroundImage, 300);

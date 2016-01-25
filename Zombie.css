@@ -1,9 +1,9 @@
 body {
   background-color: rgba(178 , 160, 189, 1);
   height: 100%;
-  margin-left: 1vh;
-  margin-right: 1vh;
+
   position: absolute;
+  background-size: cover;
 }
 
 h1  {
@@ -23,8 +23,8 @@ h2 {
   font-family: 'Sail', cursive;
 }
 
-#dancingMuerto {
-display: block;
+.dancingMuerto {
+position: relative;
 margin: 0 auto;
 }
 
@@ -105,8 +105,7 @@ font-size:0.875;
     font-family: 'Sail', cursive;
   font-size:  -webkit-xxx-large;
   position: relative;
-  margin-left: 40vh;
-  margin-right: 40vh;
+  margin: 0 auto;
 
 }
 /*.greenContainer {}*/
